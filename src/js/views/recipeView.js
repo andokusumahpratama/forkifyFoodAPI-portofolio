@@ -1,7 +1,7 @@
 import View from './view';
 
 import icons from 'url:../../img/icons.svg';   //
-import Fractional from 'fractional';    // Fractional digunakan untuk merubah format angka contoh yg sebelumnya 0.5 menjadi 1/2
+import fracty from "fracty";    // Fractional digunakan untuk merubah format angka contoh yg sebelumnya 0.5 menjadi 1/2
 
 
 class RecipeView extends View{
@@ -124,7 +124,7 @@ class RecipeView extends View{
             <svg class="recipe__icon">
                 <use href="${icons}#icon-check"></use>
             </svg>
-            <div class="recipe__quantity">${ings.quantity ? new Fraction(ings.quantity).toString() : ''}</div>
+            <div class="recipe__quantity">${ings.quantity ? fracty(ings.quantity).toString() : ''}</div>
             <div class="recipe__description">
                 <span class="recipe__unit">${ings.unit}</span>
                 ${ings.description}
