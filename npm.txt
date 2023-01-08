@@ -1,0 +1,5 @@
+npm run test
+npm i parcel -D
+npm start		(untuk menjalankan npm)
+npm i core-js regenerator-runtime
+npm install fractional		// a fraction arithmetic library written in javascript.
